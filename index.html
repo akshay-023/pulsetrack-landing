@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PulseTrack — Smartwatch</title>
+
+  <!-- Tailwind CDN (fast for prototypes) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- site CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Accessibility meta -->
+  <meta name="color-scheme" content="light dark">
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+  <header class="fixed inset-x-0 top-0 bg-white/90 backdrop-blur-sm border-b z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+      <a class="text-2xl font-extrabold" href="#" aria-label="PulseTrack home">PulseTrack</a>
+      <button id="menuBtn" aria-controls="primary-nav" aria-expanded="false" class="md:hidden p-2" aria-label="Open menu">☰</button>
+      <ul id="primary-nav" class="hidden md:flex gap-6 items-center" role="menubar">
+        <li role="none"><a role="menuitem" href="#features" class="hover:text-blue-600">Features</a></li>
+        <li role="none"><a role="menuitem" href="#pricing" class="hover:text-blue-600">Pricing</a></li>
+        <li role="none"><a role="menuitem" href="#testimonials" class="hover:text-blue-600">Testimonials</a></li>
+        <li role="none"><a role="menuitem" href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pt-28">
+    <!-- HERO -->
+    <section id="hero" class="bg-white py-20">
+      <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-extrabold">Meet <span class="text-blue-600">PulseTrack</span></h1>
+          <p class="mt-4 text-lg text-slate-700">Next-generation smartwatch that helps you monitor health, improve sleep, and reach fitness goals.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#pricing" class="inline-block bg-blue-600 text-white px-5 py-3 rounded-lg shadow hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">Order Now</a>
+            <a href="#features" class="inline-block px-5 py-3 rounded-lg border hover:border-blue-600 focus:outline-none focus:ring-2">Learn More</a>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="PulseTrack smartwatch product photo" class="mx-auto rounded-lg shadow-lg max-w-xs" />
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold">Features</h2>
+        <div class="mt-10 grid gap-8 md:grid-cols-3">
+          <article class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition" aria-labelledby="f1">
+            <h3 id="f1" class="font-semibold text-xl">Heart Rate</h3>
+            <p class="mt-2 text-sm text-slate-600">Medical-grade continuous monitoring and alerts.</p>
+          </article>
+          <article class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition" aria-labelledby="f2">
+            <h3 id="f2" class="font-semibold text-xl">Sleep Tracking</h3>
+            <p class="mt-2 text-sm text-slate-600">Deep sleep, REM and sleep score insights.</p>
+          </article>
+          <article class="bg-white p-6 rounded-xl shadow hover:shadow-xl transition" aria-labelledby="f3">
+            <h3 id="f3" class="font-semibold text-xl">AI Coaching</h3>
+            <p class="mt-2 text-sm text-slate-600">Personalized workout and recovery plans.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold">Pricing</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <div class="p-6 border rounded-xl">
+            <h3 class="font-semibold">Basic</h3>
+            <div class="text-4xl font-bold my-4">$99</div>
+            <p class="text-sm text-slate-600">Essential tracking</p>
+          </div>
+          <div class="p-6 border-2 border-blue-600 rounded-xl shadow-lg">
+            <h3 class="font-semibold text-blue-600">Pro</h3>
+            <div class="text-4xl font-bold my-4 text-blue-600">$149</div>
+            <p class="text-sm text-slate-600">Advanced features + AI</p>
+          </div>
+          <div class="p-6 border rounded-xl">
+            <h3 class="font-semibold">Elite</h3>
+            <div class="text-4xl font-bold my-4">$199</div>
+            <p class="text-sm text-slate-600">Full suite + premium support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-20 bg-gray-100">
+      <div class="max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold">What users say</h2>
+        <div class="mt-8 grid gap-6 md:grid-cols-3">
+          <figure class="bg-white p-6 rounded-xl shadow">
+            <blockquote>“PulseTrack helped me finally improve my sleep — accurate and easy to use.”</blockquote>
+            <figcaption class="mt-4 font-semibold">— Maria</figcaption>
+          </figure>
+          <figure class="bg-white p-6 rounded-xl shadow">
+            <blockquote>“Great battery and accurate readings.”</blockquote>
+            <figcaption class="mt-4 font-semibold">— Alex</figcaption>
+          </figure>
+          <figure class="bg-white p-6 rounded-xl shadow">
+            <blockquote>“Sleek design and powerful features.”</blockquote>
+            <figcaption class="mt-4 font-semibold">— Jordan</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ (collapsible) -->
+    <section id="faq" class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center">Frequently Asked</h2>
+
+        <div class="mt-8 space-y-4">
+          <div>
+            <button class="faq-toggle w-full text-left p-4 bg-gray-100 rounded-md font-semibold" aria-expanded="false" aria-controls="faq1" id="faq1-btn">Is PulseTrack waterproof?</button>
+            <div id="faq1" class="faq-panel hidden p-4 text-sm text-slate-600" role="region" aria-labelledby="faq1-btn">Yes — water resistant up to 50 meters (suitable for swimming).</div>
+          </div>
+
+          <div>
+            <button class="faq-toggle w-full text-left p-4 bg-gray-100 rounded-md font-semibold" aria-expanded="false" aria-controls="faq2" id="faq2-btn">How long is the battery?</button>
+            <div id="faq2" class="faq-panel hidden p-4 text-sm text-slate-600" role="region" aria-labelledby="faq2-btn">Up to 7 days typical use; varies with enabled sensors.</div>
+          </div>
+
+          <div>
+            <button class="faq-toggle w-full text-left p-4 bg-gray-100 rounded-md font-semibold" aria-expanded="false" aria-controls="faq3" id="faq3-btn">Works with iPhone & Android?</button>
+            <div id="faq3" class="faq-panel hidden p-4 text-sm text-slate-600" role="region" aria-labelledby="faq3-btn">Yes — native app support for both platforms.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-gray-100">
+      <div class="max-w-3xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center">Contact / Join Waitlist</h2>
+
+        <form id="contactForm" class="mt-8 bg-white p-6 rounded-xl shadow" novalidate>
+          <label for="email" class="block font-semibold">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" aria-describedby="emailHelp" class="mt-2 p-3 w-full border rounded" placeholder="you@example.com" />
+          <p id="emailHelp" class="text-sm text-red-600 mt-2 hidden" role="alert">Please enter a valid email address.</p>
+
+          <div class="mt-4">
+            <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 focus:ring-2 focus:ring-blue-500">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p>© <span id="year"></span> PulseTrack — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

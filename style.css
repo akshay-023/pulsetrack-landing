@@ -1,0 +1,14 @@
+/* Basic small custom styles (Tailwind handles the rest) */
+:root {
+  --transition: 200ms;
+}
+
+.faq-panel {
+  transition: all var(--transition) ease;
+}
+
+/* Ensure focus outlines are visible for keyboard users */
+:focus {
+  outline: 3px solid rgba(37,99,235,0.3);
+  outline-offset: 2px;
+}
